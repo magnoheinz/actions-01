@@ -1,4 +1,4 @@
-name: Boas-vindas
+name: meu-primeiro-workflow_dispatch
 
 on:
   workflow_dispatch:
@@ -7,8 +7,10 @@ permissions:
   contents: read
 
 jobs:
-  boas-vindas:
+  mais-ou-menos-boas-vindas:
     runs-on: ubuntu-latest
     steps:
       - name: Cumprimentar a turma
         run: echo "Olá, GitHub Actions!"
+      - name: Listar arquivos
+        run: ls -la
